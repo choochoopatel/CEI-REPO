@@ -319,7 +319,7 @@ html, body {
 /* Background styles shared */
 .home-background,
 .about-background,
-.contact-background,
+.gallery-background,
 .rate-background {
   min-height: 100vh;
   width: 100vw;
@@ -336,7 +336,7 @@ html, body {
   background-image: url('white_texture.jpg');
 }
 
-.contact-background {
+.gallery-background {
   background-image: url('about.jpg');
 }
 
