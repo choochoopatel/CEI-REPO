@@ -56,7 +56,7 @@ function About() {
   );
 }
 
-function Contact() {
+function Gallery() {
   const projects = [
     {
       // image: '/about.jpg',
@@ -112,7 +112,7 @@ function Navbar() {
         return 'Home';
       case '/about': 
         return 'About Me';  
-      case '/contact':
+      case '/gallery':
         return 'Projects';
       case '/rate':
         return 'Rate My Projects';
@@ -135,7 +135,7 @@ function Navbar() {
         <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
           <Link to="/" onClick={handleLinkClick}>Home</Link>
           <Link to="/about" onClick={handleLinkClick}>About Me</Link>
-          <Link to="/contact" onClick={handleLinkClick}>Gallery</Link>
+          <Link to="/gallery" onClick={handleLinkClick}>Gallery</Link>
           <Link to="/rate" onClick={handleLinkClick}>Provide Feedback</Link>
         </div>
       </div>
@@ -164,8 +164,8 @@ function AppWrapper() {
         return 'home-background';
       case '/about':
         return 'about-background';
-      case '/contact':
-        return 'contact-background';
+      case '/gallery':
+        return 'gallery-background';
       case '/rate':
         return 'rate-background';
       default:
@@ -180,7 +180,7 @@ function AppWrapper() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/rate" element={<Rate />} />
         </Routes>
       </div>
